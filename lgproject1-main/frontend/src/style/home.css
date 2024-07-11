@@ -1,0 +1,153 @@
+.root{
+    --primary-color: #1e90ff
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Limited offer rounded box */
+.limited-offer {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    padding: 10px 20px; /* Add padding for spacing */
+    border-radius: 25px; /* Rounded corners */
+    display: inline-block; /* Inline-block to fit content */
+    border: 2px solid #fff; /* Optional: Add border for better visibility */
+    margin-bottom: 20px;
+}
+
+.hero__section{
+    background-image: url('../assets/images/home.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+.hero__content {
+    margin-left: auto;
+    text-align: center; /* Left-align the content */
+    padding: 80px 0;
+    width: 55%; /* Adjust padding as needed */
+}
+
+.hero__subtitle {
+    font-size: 16px; /* Adjust subtitle font size */
+    color: #111010; /* Adjust subtitle color */
+    margin-bottom: 20 px;
+}
+.hero__content h2{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.hero__content p{
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin-bottom: 20 px;
+}
+.hero__section p:nth-child(1){
+    font-weight: 500;
+}
+.buy_btn{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+.buy_btn:hover{
+    background: #004080;
+}
+.buy_btn a:hover{
+    color: #fff;
+}
+.timer__count{
+    background: var(--primary-color);
+    height: 300px;
+}
+.timer__count img{
+    width: 70% !important;
+    height: 70% !important;
+    object-fit: contain;
+}
+.store__btn{
+    background: #fff;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.store__btn a:hover{
+    color: var(--primary-color);
+}
+
+
+/*resize for other device*/
+
+@media only screen and (max-width: 992px) {
+    .hero__content h2{
+        font-size: 2rem;
+    }
+    .section__title{
+        font-size: 1.7rem;
+    }
+    .counter__img{
+        display: none;
+    }
+    .clock__top-content{
+        text-align: center;
+    }
+    .count__down-col{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero__content h2{
+        font-size: 1.6rem;
+    }
+    .hero__content p{
+        font-size: 1 rem;
+    }
+    .buy_btn a{
+        font-size: 0.9rem;
+    }
+    .section__title{
+        font-size: 1.4rem;
+    }
+    .hero__content {
+        width: 100%; /* Make content width 100% */
+        padding: 60px 20px; /* Adjust padding */
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero__content {
+        padding: 40px 20px; /* Adjust padding */
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+    .hero__section {
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+    .hero__content h2 {
+        font-size: 1.4rem;
+    }
+    .hero__content p {
+        font-size: 0.8rem;
+    }
+    .buy_btn {
+        padding: 8px 20px; /* Adjust padding */
+    }
+    .buy_btn a {
+        font-size: 0.8rem;
+    }
+
+}
