@@ -1,0 +1,18 @@
+
+.order-confirmation {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.order-summary {
+    margin-top: 20px;
+}
+
+.order-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-summary ul li {
+    margin-bottom: 0.5rem;
+}

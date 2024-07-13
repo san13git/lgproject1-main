@@ -1,3 +1,4 @@
+//router.js
 import React from "react";
 import {Route,Routes,Navigate} from "react-router-dom";
 
@@ -9,6 +10,7 @@ import ProductDetail from "../pages/ProductDetail";
 import Checkout from "../pages/Checkout";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
+import OrderConfirmation from "../pages/OrderConfirmation";
 
 const Router = () => {
     return(
@@ -18,11 +20,12 @@ const Router = () => {
             <Route path='shop' element={<Shop/>}/>
             <Route path='cart' element={<Cart/>}/>
             <Route path='login' element={<Login/>}/>
-            {/*<Route path='productDetail' element={<ProductDetail/>}/>*/}
+            <Route path='productDetail' element={<ProductDetail/>}/>
             <Route path='checkout' element={<Checkout/>}/>
             <Route path='signUp' element={<SignUp/>}/>
             <Route path='signIn' element={<SignIn/>}/>
             <Route path="/shop/:id" element={<ProductDetail />} />
+            <Route path="/order-confirmation" element={<OrderConfirmation />} />
         </Routes>
     ) ;
 };

@@ -6,6 +6,7 @@ const userRoutes = require('./routes/userRoutes')
 const searchLog=require('./routes/searchLog')
 const schedule = require('node-schedule');
 const { identifyFrequentSearchesAndSendEmails } = require('./controllers/searchLogController');
+const billRoutes = require('./routes/bill');
 // const { sendDiscountEmail } = require('./emailService');
 
 
@@ -24,6 +25,7 @@ app.use(express.json());
 // Routes
 app.use('/api/v1/users', userRoutes);
 app.use('/api/v1/searches',searchLog);
+app.use('/api/v1/orders', billRoutes);
 
 
 
